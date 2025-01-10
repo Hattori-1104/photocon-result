@@ -29,20 +29,32 @@ const PageLink = ({ page }: { page: number }) => {
 	return (
 		<div className="w-full h-20 border-y flex flex-row justify-start items-center text-xl text-center z-1">
 			{page === 0 ? (
-				<Link className="w-1/2" to="/">
+				<Link
+					className="w-full text-center h-full flex justify-center items-center"
+					to="/"
+				>
 					優秀作品
 				</Link>
 			) : (
-				<Link className="w-1/2" to={`/${Number(page) - 1}`}>
+				<Link
+					className="w-full text-center h-full flex justify-center items-center"
+					to={`/${Number(page) - 1}`}
+				>
 					前のページ
 				</Link>
 			)}
 			{Number(page) + 1 < Math.ceil(docs.items.length / displaySize) ? (
-				<Link className="w-1/2" to={`/${Number(page) + 1}`}>
+				<Link
+					className="w-full text-center h-full flex justify-center items-center"
+					to={`/${Number(page) + 1}`}
+				>
 					次のページ
 				</Link>
 			) : (
-				<Link className="w-1/2" to="/">
+				<Link
+					className="w-full text-center h-full flex justify-center items-center"
+					to="/"
+				>
 					優秀作品
 				</Link>
 			)}

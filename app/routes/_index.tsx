@@ -72,16 +72,22 @@ export default function Index() {
 					<h1 className="text-2xl w-full text-center mb-4 py-8 bg-zinc-800 text-white shadow shadow-black">
 						2024 フォトコンテスト結果発表
 					</h1>
-					<h2 className="text-xl text-center flex flex-col justify-center items-center gap-2 px-4">
-						<p>2024年度2学年見学旅行の</p>
-						<p>思い出の写真を募集しました。</p>
-						<p>
+					<h2 className="text-xl text-center px-4">
+						<p className="mb-2">
+							<span className="inline-block">2024年度2学年見学旅行の</span>
+							<span className="inline-block">思い出の写真を募集しました。</span>
+						</p>
+						<p className="mb-2">
 							<span className="inline-block">たくさんのご応募</span>
 							<span className="inline-block">ありがとうございました。</span>
 						</p>
+						<p className="text-zinc-600 text-sm mb-24">
+							※応募されたすべての作品をご覧いただけます。
+						</p>
+						<p className="">公開期間：３年１学期まで</p>
 					</h2>
 					<h3 className="text-lg py-2 absolute bottom-12">
-						<p>西高広報委員会</p>
+						<p>西高PTA広報委員会</p>
 					</h3>
 				</div>
 				{selectedItems.map((item) => (
@@ -103,7 +109,10 @@ export default function Index() {
 					</div>
 				))}
 				<div className="w-full h-24 border-y flex flex-row justify-end items-center shrink-0 snap-end">
-					<Link to="/0" className="mr-8 text-xl">
+					<Link
+						to="/0"
+						className="px-8 text-xl flex justify-center items-center h-full"
+					>
 						すべての作品を見る
 					</Link>
 				</div>
