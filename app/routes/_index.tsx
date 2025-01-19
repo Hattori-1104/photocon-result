@@ -84,7 +84,7 @@ export default function Index() {
 						<p className="text-zinc-600 text-sm mb-24">
 							※応募されたすべての作品をご覧いただけます。
 						</p>
-						<p className="">公開期間：2025年1学期まで</p>
+						<p className="">公開期間：2025年1学期末まで</p>
 					</h2>
 					<h3 className="text-lg py-2 absolute bottom-12">
 						<p>西高PTA広報委員会</p>
